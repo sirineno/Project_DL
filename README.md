@@ -1,4 +1,4 @@
-# Investigating Human Visual Salience Prediction Using Pretrained ANNs
+# Investigating Human Visual Salience Prediction Using Pretrained ANNs and linear probing
 
 Human attention is guided by both low-level visual features (e.g., contrast, edges) and high-level semantic information (e.g., faces, objects). Visual salience, which predicts where humans look first in an image, is a key topic in understanding human visual perception.
 
