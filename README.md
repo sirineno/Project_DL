@@ -48,7 +48,11 @@ We will perform both qualitative and quantitative analyses to evaluate the resul
 1. We explained our model structure and the training + validation execution in the "model_train_val.ipynb". However, the execution of it was made in the python scripts in the "Train_and_val" folder. We created the notebook just to explain the model.
 2. We analyzed the model's performance in the "Model_performance" Folder. You'll find in this folder the validation's metrics results file that we used to analyze the model's performance.
 
-
+### How to download and use the dataset : 
+I you would like to download the datasets, you can get them through this link : https://salicon.net/download/
+Make sure to download : 
+- Images : training and validation
+- Annotations: training and validation 
 
 
 
