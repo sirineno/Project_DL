@@ -44,12 +44,11 @@ We will perform both qualitative and quantitative analyses to evaluate the resul
 2. **Qualitative Analysis:**
     Visualize ANN-predicted salience maps and overlay them with human fixation heatmaps.
      
-### Expected Outcomes
+### How to go through the files in Order : 
+1. We explained our model structure and the training + validation execution in the "model_train_val.ipynb". However, the execution of it was made in the python scripts in the "Train_and_val" folder. We created the notebook just to explain the model.
+2. We analyzed the model's performance in the "Model_performance" Folder. You'll find in this folder the validation's metrics results file that we used to analyze the model's performance.
 
-- Insights into the ability of pretrained ANNs to predict human visual salience.
-- Understanding of the relationship between ANN internal representations and human attention patterns.
-- Contribution to the field of visual perception and computational neuroscience.
 
-### Conclusion
 
-By investigating the predictive power of pretrained ANNs for human visual salience, this project aims to bridge the gap between artificial and human visual perception. The findings could have significant implications for the development of more human-like artificial vision systems and enhance our understanding of the neural basis of attention.
+
+
