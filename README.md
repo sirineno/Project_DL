@@ -14,27 +14,24 @@ This project aims to explore the capability of pretrained artificial neural netw
 
 ### Methodology
 
-1. **Data Collection:** Use eye-tracking data to measure human visual salience across various images.
-2. **Pretrained ANN Models:** Utilize pretrained ANNs to generate internal representations of the same images.
-3. **Linear Probing:** Apply linear probing techniques to assess the alignment between the networks' internal representations and human attention patterns.
-4. **Analysis:** Compare the ANN predictions with human eye-tracking data to evaluate the performance of the models.
+1. **Dataset:** Use SALICON dataset, which provides salience maps derived from crowd-sourced gaze data. We will not collect new data for this project, as the existing dataset provides sufficient coverage for our analysis. link : https://salicon.net
+2. **Pretrained ANN Models:** Use the pretrained resnet50 to extract features of the images.
+3. **Linear Probing:** Apply linear probing techniques to assess the alignment between the networks' extracted features and human saliency maps.
+4. **Analysis:** Compare the model's predictions with the actual data to evaluate the performance of the models.
 
-### Dataset
 
-We will use the SALICON dataset, which provides salience maps derived from crowd-sourced gaze data. We will not collect new data for this project, as the existing dataset provides sufficient coverage for our analysis.
-
-### Proposed Methods and Algorithms
+### Methods and Algorithms
 
 1. **Pretrained Neural Networks:**
-   - Use pretrained ANNs such as ResNet or CLIP to extract image features. These models are known for capturing both low- and high-level visual information.
+   - Use pretrained ResNet to extract image features. The model is known for capturing both low- and high-level visual information.
    
 2. **Linear Probing:**
-   - Apply linear probing using the Osculari Python package to map the network’s features to human fixation data.
+   - Apply linear probing to map the network’s features to the fixation data.
    - Train a simple linear model to predict human salience patterns using neural network representations as input.
    
 3. **Salience Map Comparison:**
    - Generate salience maps from neural network predictions.
-   - Compare these maps to human eye-tracking data to evaluate alignment.
+   - Compare these maps to the actual data to evaluate alignment.
 
 ### Evaluation
 
@@ -45,9 +42,8 @@ We will perform both qualitative and quantitative analyses to evaluate the resul
    - AUC (Area Under the Curve): Evaluate how well network predictions match observed human fixations.
    
 2. **Qualitative Analysis:**
-   - Visualize ANN-predicted salience maps and overlay them with human fixation heatmaps.
-   - Examine alignment with high-level semantic dimensions (e.g., faces, objects).
-
+    Visualize ANN-predicted salience maps and overlay them with human fixation heatmaps.
+     
 ### Expected Outcomes
 
 - Insights into the ability of pretrained ANNs to predict human visual salience.
